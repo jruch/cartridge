@@ -33,7 +33,7 @@ except (ImportError, SyntaxError):
 HAS_PDF = pisa is not None
 
 
-# Set up checkout handlers.
+# Set up checkout handlers1.
 handler = lambda s: import_dotted_path(s) if s else lambda *args: None
 billship_handler = handler(settings.SHOP_HANDLER_BILLING_SHIPPING)
 tax_handler = handler(settings.SHOP_HANDLER_TAX)
